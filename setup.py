@@ -9,7 +9,7 @@ import re
 from distutils.command.build import build
 from glob import glob
 from itertools import chain
-from os.path import basename
+from os.path import basename, exists
 from os.path import dirname
 from os.path import join
 from os.path import relpath
@@ -177,11 +177,14 @@ setup(
     ] if Cython else [],
     ext_modules=[
         Extension(
-            splitext(relpath(path, 'src').replace(os.sep, '.'))[0],
-            sources=[path],
+            relpath(name, 'src').replace(os.sep, '.'),
+            sources=[variant],
             include_dirs=[dirname(path)]
         )
         for root, _, _ in os.walk('src')
-        for path in glob(join(root, '*.pyx' if Cython else '*.c'))
+        for path in glob(join(root, '*.pyd' if Cython else '*.c'))
+        for name in [splitext(path)[0]]
+        for variant in [name + '.pyx', name + '.py']
+        if exists(variant)
     ],
 )

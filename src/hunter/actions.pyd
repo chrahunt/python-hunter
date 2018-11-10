@@ -1,0 +1,14 @@
+# from .util cimport rudimentary_repr
+
+cdef class Action(object):
+cdef class Debugger(Action):
+cdef class Manhole(Action):
+cdef class ColorStreamAction(Action):
+    cpdef str _safe_repr(self, object obj)
+cdef class CodePrinter(ColorStreamAction):
+    cpdef str _safe_source(self, event)
+    cpdef str _format_filename(self, event)
+cdef class CallPrinter(CodePrinter):
+cdef class VarsPrinter(ColorStreamAction):
+    cpdef _iter_symbols(code)
+
