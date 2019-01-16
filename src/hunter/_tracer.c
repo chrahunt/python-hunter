@@ -823,9 +823,9 @@ static const char *__pyx_f[] = {
   "src/hunter/_tracer.pyx",
   "stringsource",
   "src/hunter/_tracer.pxd",
-  ".tox/cythonize/local/lib/python2.7/site-packages/Cython/Includes/cpython/type.pxd",
-  ".tox/cythonize/local/lib/python2.7/site-packages/Cython/Includes/cpython/bool.pxd",
-  ".tox/cythonize/local/lib/python2.7/site-packages/Cython/Includes/cpython/complex.pxd",
+  "type.pxd",
+  "bool.pxd",
+  "complex.pxd",
   "src/hunter/_event.pxd",
   "src/hunter/_predicates.pxd",
 };

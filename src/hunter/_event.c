@@ -823,9 +823,9 @@ static const char *__pyx_f[] = {
   "src/hunter/_event.pyx",
   "stringsource",
   "src/hunter/_event.pxd",
-  ".tox/py37-cython-nocov/lib/python3.7/site-packages/Cython/Includes/cpython/type.pxd",
-  ".tox/py37-cython-nocov/lib/python3.7/site-packages/Cython/Includes/cpython/bool.pxd",
-  ".tox/py37-cython-nocov/lib/python3.7/site-packages/Cython/Includes/cpython/complex.pxd",
+  "type.pxd",
+  "bool.pxd",
+  "complex.pxd",
   "src/hunter/_tracer.pxd",
 };
 
