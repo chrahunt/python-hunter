@@ -3434,12 +3434,12 @@ static PyObject *__pyx_pf_6hunter_7_tracer_6Tracer_8trace(struct __pyx_obj_6hunt
  * 
  *     def stop(self):             # <<<<<<<<<<<<<<
  *         """
- *         Stop tracing. Reinstalls the :ref:`hunter.Tracer.previous` tracer.
+ *         Stop tracing. Reinstalls the :attr:`hunter.Tracer.previous` tracer.
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6hunter_7_tracer_6Tracer_11stop(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_6hunter_7_tracer_6Tracer_10stop[] = "\n        Stop tracing. Reinstalls the :ref:`hunter.Tracer.previous` tracer.\n        ";
+static char __pyx_doc_6hunter_7_tracer_6Tracer_10stop[] = "\n        Stop tracing. Reinstalls the :attr:`hunter.Tracer.previous` tracer.\n        ";
 static PyObject *__pyx_pw_6hunter_7_tracer_6Tracer_11stop(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
@@ -3465,7 +3465,7 @@ static PyObject *__pyx_pf_6hunter_7_tracer_6Tracer_10stop(struct __pyx_obj_6hunt
   __Pyx_TraceCall("stop", __pyx_f[0], 126, 0, __PYX_ERR(0, 126, __pyx_L1_error));
 
   /* "hunter/_tracer.pyx":130
- *         Stop tracing. Reinstalls the :ref:`hunter.Tracer.previous` tracer.
+ *         Stop tracing. Reinstalls the :attr:`hunter.Tracer.previous` tracer.
  *         """
  *         if self.handler is not None:             # <<<<<<<<<<<<<<
  *             if self.previous is None:
@@ -3624,7 +3624,7 @@ static PyObject *__pyx_pf_6hunter_7_tracer_6Tracer_10stop(struct __pyx_obj_6hunt
     }
 
     /* "hunter/_tracer.pyx":130
- *         Stop tracing. Reinstalls the :ref:`hunter.Tracer.previous` tracer.
+ *         Stop tracing. Reinstalls the :attr:`hunter.Tracer.previous` tracer.
  *         """
  *         if self.handler is not None:             # <<<<<<<<<<<<<<
  *             if self.previous is None:
@@ -3637,7 +3637,7 @@ static PyObject *__pyx_pf_6hunter_7_tracer_6Tracer_10stop(struct __pyx_obj_6hunt
  * 
  *     def stop(self):             # <<<<<<<<<<<<<<
  *         """
- *         Stop tracing. Reinstalls the :ref:`hunter.Tracer.previous` tracer.
+ *         Stop tracing. Reinstalls the :attr:`hunter.Tracer.previous` tracer.
  */
 
   /* function exit code */

@@ -125,7 +125,7 @@ cdef class Tracer:
 
     def stop(self):
         """
-        Stop tracing. Reinstalls the :ref:`hunter.Tracer.previous` tracer.
+        Stop tracing. Reinstalls the :attr:`hunter.Tracer.previous` tracer.
         """
         if self.handler is not None:
             if self.previous is None:
