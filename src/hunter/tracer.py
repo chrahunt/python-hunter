@@ -38,14 +38,14 @@ class Tracer(object):
     @property
     def handler(self):
         """
-        The current predicate. Set via :func:`hunter.Tracer.trace`.
+        The current predicate. Set via :meth:`~hunter.Tracer.trace`.
         """
         return self._handler
 
     @property
     def previous(self):
         """
-        The previous tracer, if any (whatever ``sys.gettrace()`` returned prior to :func:`hunter.Tracer.trace`).
+        The previous tracer, if any (whatever ``sys.gettrace()`` returned prior to :meth:`~hunter.Tracer.trace`).
         """
         return self._previous
 
@@ -97,7 +97,7 @@ class Tracer(object):
 
     def stop(self):
         """
-        Stop tracing. Reinstalls the :ref:`hunter.Tracer.previous` tracer.
+        Stop tracing. Reinstalls the :attr:`previous` tracer.
         """
         if self._handler is not None:
             sys.settrace(self._previous)
@@ -108,7 +108,7 @@ class Tracer(object):
 
     def __enter__(self):
         """
-        Does nothing. Users are expected to call :func:`hunter.Tracer.trace`.
+        Does nothing. Users are expected to call :meth:`~hunter.Tracer.trace`.
 
         Returns: self
         """
@@ -116,6 +116,6 @@ class Tracer(object):
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         """
-        Wrapper around :func:`hunter.Tracer.stop`. Does nothing with the arguments.
+        Wrapper around :meth:`~hunter.Tracer.stop`. Does nothing with the arguments.
         """
         self.stop()
